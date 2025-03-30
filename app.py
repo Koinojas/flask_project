@@ -44,4 +44,6 @@ def delete_patient(patient_id):
         db.session.delete(patient)
         db.session.commit()
     return redirect('/')
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=10000)
 
